@@ -1,0 +1,70 @@
+/* General styles */
+body {
+    font-family: 'Pixel Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    background: linear-gradient(145deg, #6a47e2, #3498db);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Dark and light mode styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+button#mode-switch {
+    background: #e91e63;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+body.light-mode button#mode-switch {
+    background: #8e44ad;
+}
+
+/* Pixelated effect */
+h1, h2, p {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px #000;
+}
