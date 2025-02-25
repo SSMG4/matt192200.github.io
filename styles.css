@@ -19,7 +19,7 @@ header {
 }
 
 button {
-    background: linear-gradient(145deg, #6a47e2, #3498db);
+    background-color: #5e4b8b; /* Matches dark mode theme */
     color: white;
     border: none;
     padding: 15px 30px;
@@ -33,33 +33,37 @@ button {
 
 button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 button:active {
     transform: scale(0.95);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 /* Dark and light mode styles */
 body.dark-mode {
-    background-color: #1e1e1e;
+    background-color: #121212;  /* Dark background */
     color: #fff;
 }
 
 body.light-mode {
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;  /* Light background */
     color: #333;
 }
 
 button#mode-switch {
-    background: #e91e63;
+    background: #6c5ce7; /* Light button for mode switch */
     margin-top: 20px;
     transition: all 0.3s ease;
 }
 
 body.light-mode button#mode-switch {
-    background: #8e44ad;
+    background: #2d3436; /* Dark button for mode switch in light mode */
+}
+
+body.light-mode button {
+    background-color: #3498db;  /* Lighter blue for light mode */
 }
 
 /* Pixelated effect */
@@ -68,3 +72,4 @@ h1, h2, p {
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px #000;
 }
+
