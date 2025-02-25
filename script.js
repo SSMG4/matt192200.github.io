@@ -1,20 +1,17 @@
-function toggleMode() {
-    const body = document.body;
-    body.classList.toggle("dark-mode");
-    body.classList.toggle("light-mode");
+// Switch mode on icon click
+const modeIcon = document.getElementById('mode-icon');
+const body = document.body;
 
-    // Change the button color based on the mode
-    const modeButton = document.getElementById("mode-switch");
-    if (body.classList.contains("dark-mode")) {
-        modeButton.textContent = "Switch to Light Mode";
+modeIcon.addEventListener('click', () => {
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        modeIcon.classList.remove('fa-moon');
+        modeIcon.classList.add('fa-sun');
     } else {
-        modeButton.textContent = "Switch to Dark Mode";
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        modeIcon.classList.remove('fa-sun');
+        modeIcon.classList.add('fa-moon');
     }
-}
-
-// Initially set the mode based on the user's preference
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.body.classList.add("dark-mode");
-} else {
-    document.body.classList.add("light-mode");
-}
+});
