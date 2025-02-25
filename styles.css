@@ -1,6 +1,6 @@
 /* General styles */
 body {
-    font-family: 'Pixel Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Normal font */
     background-color: #121212;
     color: #fff;
     transition: all 0.3s ease;
@@ -68,7 +68,7 @@ body.light-mode button {
 
 /* Pixelated effect */
 h1, h2, p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial', sans-serif; /* Normal font for headers */
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px #000;
 }
@@ -91,3 +91,4 @@ body.dark-mode #mode-icon {
 body.light-mode #mode-icon {
     content: url('sun-icon.png'); /* Replace with actual sun icon */
 }
+
