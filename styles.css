@@ -73,3 +73,21 @@ h1, h2, p {
     text-shadow: 2px 2px 5px #000;
 }
 
+/* Icon for light/dark mode switch */
+#mode-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Transition for moon and sun */
+body.dark-mode #mode-icon {
+    content: url('moon-icon.png'); /* Replace with actual moon icon */
+}
+
+body.light-mode #mode-icon {
+    content: url('sun-icon.png'); /* Replace with actual sun icon */
+}
